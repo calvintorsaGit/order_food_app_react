@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import CartProvider from './store/CartProvider';
 import Header from "./components/Header/Header";
+import Meals from "./components/Meals/Meals";
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
@@ -17,6 +18,9 @@ function App() {
   return (
       <CartProvider>
         <Header onShowCart={showCartHandler} />
+        <main>
+            <Meals/>
+        </main>
       </CartProvider>
   );
 }
