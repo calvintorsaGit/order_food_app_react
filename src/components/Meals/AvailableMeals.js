@@ -12,7 +12,7 @@ const AvailableMeals = () => {
     useEffect(() => {
         const fetchMeals = async () => {
             const response = await fetch(
-                'https://react-http-6b4a6.firebaseio.com/meals.json'
+                'https://react-learn-ff16a-default-rtdb.asia-southeast1.firebasedatabase.app/meals.json'
             );
 
             if (!response.ok) {
