@@ -14,6 +14,7 @@ const AvailableMeals = () => {
             const response = await fetch(
                 'https://react-learn-ff16a-default-rtdb.asia-southeast1.firebasedatabase.app/meals.json'
             );
+            console.log(response)
 
             if (!response.ok) {
                 throw new Error('Something went wrong!');
